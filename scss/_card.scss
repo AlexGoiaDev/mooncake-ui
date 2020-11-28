@@ -1,0 +1,39 @@
+
+/* Lo recomendable es usar la card en un article */
+
+
+.card {
+  padding: $padding;
+  margin: $margin;
+  border-radius: $radius;
+  background: white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  width: calc(50% - #{(2 * $margin) + (2 * $padding)});
+
+  /* La primera imagen debería ir antes del título */
+  img {
+    margin-left: -$padding;
+    margin-top: -$padding;
+    width: calc(100% + #{($padding * 2)});
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+  }
+
+  /*
+    El título de la card debe ir en h2
+  */
+  h2 {
+    text-align: center;
+    margin-top: $margin;
+    font-size: 1.25em;
+  }
+
+  .price {
+    text-align: right;
+    @extend .regular-font;
+    color: #333;
+    margin: 0;
+  }
+
+  
+}

@@ -1,0 +1,43 @@
+
+button {
+  padding: $padding #{$padding * 1.5};
+  margin: $margin;
+  border-radius: $radius;
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+  color: white;
+  @extend .regular-font;
+}
+
+.primary-btn {
+  @extend .primary-bg;
+}
+
+.secondary-btn {
+  @extend .secondary-bg;
+}
+
+.danger-btn {
+  @extend .danger-bg;
+}
+
+.warning-btn {
+  @extend .warning-bg;
+}
+
+.success-btn {
+  @extend .success-bg;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:disabled {
+  @extend .disabled-bg;
+  @extend .over-light-color;
+  &:hover {
+    opacity: 1;
+  }
+}

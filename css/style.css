@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+:root {
+  --primary-color: #073b4c;
+  --secondary-color: #118ab2;
+  --success-color: #05d59e;
+  --danger-color: #EF476F;
+  --warning-color: #FFD166;
+  --disabled-color: #f2f2f2;
+  --over-light-color: rgba(0,0,0,0.5);
+}
+
+/* COLORS HELPERS */
+.primary-bg, .primary-btn {
+  background-color: var(--primary-color);
+}
+
+.secondary-bg, .secondary-btn {
+  background-color: var(--secondary-color);
+}
+
+.success-bg, .success-btn {
+  background-color: var(--success-color);
+}
+
+.danger-bg, .danger-btn {
+  background-color: var(--danger-color);
+}
+
+.warning-bg, .warning-btn {
+  background-color: var(--warning-color);
+}
+
+.disabled-bg, button:disabled {
+  background-color: var(--disabled-color);
+}
+
+.primary-txt {
+  color: var(--primary-color);
+}
+
+.secondary-txt {
+  color: var(--secondary-color);
+}
+
+.success-txt {
+  color: var(--success-color);
+}
+
+.warning-txt {
+  color: var(--warning-color);
+}
+
+/* Color a utilizar cuando tengamos un fondo suave */
+.over-light-color, button:disabled {
+  color: var(--over-light-color);
+}
+
+/* SHADOWS */
+.shadow {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.light-shadow {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.very-light-shadow, header {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.title-font, h1, h2, h3, h4, h5 {
+  font-family: "Rubik", sans-serif;
+}
+
+.regular-font, .card .price, button, p {
+  font-family: "Karla", sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+  display: grid;
+  grid-gap: 0;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 60px minmax(0, 1fr) 60px;
+}
+
+header, footer {
+  z-index: 1000;
+}
+
+main {
+  overflow: scroll;
+}
+
+footer {
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+footer button {
+  width: 45%;
+}
+
+h1, h2, h3, h4, h4, h5 {
+  margin: 8px;
+}
+
+.container {
+  padding: 10px;
+  margin: 8px;
+}
+
+.full-screen {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  bottom: 60px;
+  right: 0;
+  background: white;
+}
+.full-screen .close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 2em;
+  color: gray;
+}
+.full-screen h1 {
+  padding-left: 20px;
+  margin-top: 32px;
+}
+
+.center-content, header, footer {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.full-width {
+  width: calc(100% - 16px);
+}
+
+.half-width {
+  width: 50%;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 8px;
+  border-radius: 0.5rem;
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:disabled:hover {
+  opacity: 1;
+}
+
+/* Lo recomendable es usar la card en un article */
+.card {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 0.5rem;
+  background: white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 36px);
+  /* La primera imagen debería ir antes del título */
+  /*
+    El título de la card debe ir en h2
+  */
+}
+.card img {
+  margin-left: -10px;
+  margin-top: -10px;
+  width: calc(100% + 20px);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.card h2 {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1.25em;
+}
+.card .price {
+  text-align: right;
+  color: #333;
+  margin: 0;
+}
+
+input {
+  outline: none;
+}
+
+input[type=search] {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 0.5rem;
+  width: calc(100% - 16px);
+  color: #afafaf;
+  border: 1px solid #f0f0f0;
+  background: #f0f0f0;
+}
+input[type=search]::placeholder {
+  color: #afafaf;
+}
+input[type=search]:hover {
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
+  box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
+}
+input[type=search]:focus {
+  background-color: #fff;
+  border-color: rgba(5, 213, 158, 0.4);
+  -webkit-box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
+  box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.search-container .search-icon {
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  color: #afafaf;
+}
+.search-container input[type=search] {
+  padding-left: 35.2px;
+}
+
+/*# sourceMappingURL=style.css.map */

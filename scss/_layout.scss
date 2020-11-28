@@ -1,0 +1,81 @@
+.wrapper {
+  height: 100%;
+  display: grid;
+  grid-gap: 0;
+  grid-template-areas:
+  'header'
+  'main'
+  'footer';
+  grid-template-rows: 60px minmax(0, 1fr) 60px;
+}
+
+header, footer {
+  @extend .center-content;
+  z-index: 1000;
+}
+
+header {
+  @extend .very-light-shadow;
+}
+
+main {
+  overflow: scroll;
+}
+
+footer {
+  box-shadow: 0 -2px $padding $light-shadow;
+
+  button {
+    width: 45%;
+  }
+}
+
+h1, h2, h3, h4, h4, h5 {
+  @extend .title-font;
+  margin: $margin;
+}
+
+p {
+  @extend .regular-font;
+}
+
+.container {
+  padding: $padding;
+  margin: $margin;
+} 
+
+.full-screen {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  bottom: 60px;
+  right: 0;
+  background: white;
+  .close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 2em;
+    color: gray;
+  }
+
+  h1 {
+    padding-left: #{$padding * 2};
+    margin-top: #{$margin * 4};
+  }
+}
+
+.center-content {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.full-width {
+  width: calc(100% - #{$margin * 2});
+}
+
+.half-width {
+  width: 50%;
+}

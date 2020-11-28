@@ -1,0 +1,12 @@
+@import './color-helpers';
+@import './shadow-helpers';
+
+.title-font {
+  font-family: $titleFont;
+}
+
+.regular-font {
+  font-family: $regularFont;
+}
+
+

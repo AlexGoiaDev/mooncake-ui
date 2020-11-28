@@ -1,0 +1,45 @@
+/* COLORS HELPERS */
+.primary-bg {
+    background-color: var(--primary-color);
+}
+
+.secondary-bg {
+    background-color: var(--secondary-color);
+}
+
+.success-bg {
+    background-color: var(--success-color);
+}
+
+.danger-bg {
+    background-color: var(--danger-color);
+}
+
+.warning-bg {
+    background-color: var(--warning-color);
+}
+
+.disabled-bg {
+    background-color: var(--disabled-color);
+}
+
+.primary-txt {
+    color: var(--primary-color);
+}
+
+.secondary-txt {
+    color: var(--secondary-color);
+}
+
+.success-txt {
+    color: var(--success-color);
+}
+
+.warning-txt {
+    color: var(--warning-color);
+}
+
+/* Color a utilizar cuando tengamos un fondo suave */
+.over-light-color {
+    color: var(--over-light-color);
+}
