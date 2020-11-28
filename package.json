@@ -3,12 +3,12 @@
   "version": "1.0.1",
   "description": "Mooncake ui library",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "sass --watch scss/style.scss ./css/style.css"
+    "start": "npm run scss",
+    "scss": "sass --watch scss/style.scss ./index.css"
   },
   "author": "Álex Goia",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.29.0"
   }
 }
