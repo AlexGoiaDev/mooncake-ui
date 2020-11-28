@@ -1,6 +1,6 @@
 {
   "name": "mooncake-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mooncake ui library",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,6 @@
   "author": "Álex Goia",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^5.0.0",
     "sass": "^1.29.0"
   }
 }
