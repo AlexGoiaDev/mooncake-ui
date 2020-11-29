@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
-
 $padding: 10px;
 $margin: 8px;
 $radius: 0.5rem;
@@ -12,6 +11,7 @@ $light-shadow: rgba(0, 0, 0, 0.1);
 $very-light-shadow: rgba(0,0,0,0.05);
 $icon-size: 16px;
 
+
 :root {
   --primary-color: #073b4c;
   --secondary-color: #118ab2;
@@ -20,5 +20,7 @@ $icon-size: 16px;
   --warning-color: #FFD166;
   --disabled-color: #f2f2f2;
   --over-light-color: rgba(0,0,0,0.5);
+  --heading-color: #333333;
+  --paragraph-color: #555555;
 }
 
