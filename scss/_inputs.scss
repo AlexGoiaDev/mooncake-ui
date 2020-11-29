@@ -1,20 +1,15 @@
 input {
   outline: none;
-}
-
-input[type="search"] {
+  display: block;
   padding: $padding;
   margin: $margin;
   border-radius: $radius;
-  width: calc(100% - #{$margin * 2});
   color: rgb(175, 175, 175);
   border: 1px solid #f0f0f0;
-  background: #f0f0f0;
-
+  background: #ffffff;
   &::placeholder {
     color: rgb(175, 175, 175);
   }
-
   &:hover {
     background-color: #fff;
     border-color: rgba(0,0,0, 0.1);
@@ -27,6 +22,12 @@ input[type="search"] {
     -webkit-box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
     box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
   }
+  
+}
+
+input[type="search"] {
+
+
 }
 
 .search-container {
