@@ -205,7 +205,10 @@ button:disabled:hover {
   margin: 0;
 }
 
-input {
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=search] {
   outline: none;
   display: block;
   padding: 10px;
@@ -215,17 +218,24 @@ input {
   border: 1px solid #f0f0f0;
   background: #ffffff;
 }
-input::placeholder {
+input[type=text]::placeholder,
+input[type=password]::placeholder,
+input[type=email]::placeholder,
+input[type=search]::placeholder {
   color: #afafaf;
 }
-input:hover {
-  background-color: #fff;
+input[type=text]:hover,
+input[type=password]:hover,
+input[type=email]:hover,
+input[type=search]:hover {
   border-color: rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
   box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
 }
-input:focus {
-  background-color: #fff;
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=search]:focus {
   border-color: rgba(5, 213, 158, 0.4);
   -webkit-box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
   box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
