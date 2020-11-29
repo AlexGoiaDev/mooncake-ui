@@ -30,14 +30,7 @@ footer {
   }
 }
 
-h1, h2, h3, h4, h4, h5 {
-  @extend .title-font;
-  margin: $margin;
-}
 
-p {
-  @extend .regular-font;
-}
 
 .container {
   padding: $padding;
@@ -74,6 +67,10 @@ p {
 
 .full-width {
   width: calc(100% - #{$margin * 2});
+}
+
+.full-width-in {
+  width: calc(100% - #{$margin +  $padding} * 2);
 }
 
 .half-width {
