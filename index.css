@@ -38,7 +38,13 @@
   background-color: var(--disabled-color);
 }
 
-.primary-txt {
+.primary-txt, input[type=text]:hover, input[type=text]:focus,
+input[type=password]:hover,
+input[type=password]:focus,
+input[type=email]:hover,
+input[type=email]:focus,
+input[type=search]:hover,
+input[type=search]:focus {
   color: var(--primary-color);
 }
 
@@ -48,6 +54,13 @@
 
 .success-txt {
   color: var(--success-color);
+}
+
+.danger-txt, input[type=text]:invalid,
+input[type=password]:invalid,
+input[type=email]:invalid,
+input[type=search]:invalid {
+  color: var(--danger-color);
 }
 
 .warning-txt {
@@ -84,7 +97,7 @@
   font-family: "Rubik", sans-serif;
 }
 
-.regular-font, p, .card .price, button {
+.regular-font, button, p, .card .price {
   font-family: "Karla", sans-serif;
 }
 
@@ -155,25 +168,6 @@ footer button {
   width: 50%;
 }
 
-button {
-  padding: 10px 15px;
-  margin: 8px;
-  border-radius: 0.5rem;
-  border: none;
-  text-transform: uppercase;
-  outline: none;
-  color: white;
-  cursor: pointer;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-button:disabled:hover {
-  opacity: 1;
-}
-
 /* Lo recomendable es usar la card en un article */
 .card {
   padding: 10px;
@@ -205,6 +199,16 @@ button:disabled:hover {
   margin: 0;
 }
 
+h1, h2, h3, h4, h4, h5 {
+  margin: 8px;
+  margin-bottom: 16px;
+}
+
+p {
+  margin: 8px;
+  margin-bottom: 16px;
+}
+
 input[type=text],
 input[type=password],
 input[type=email],
@@ -213,6 +217,7 @@ input[type=search] {
   display: block;
   padding: 10px;
   margin: 8px;
+  margin-bottom: 16px;
   border-radius: 0.5rem;
   color: #afafaf;
   border: 1px solid #f0f0f0;
@@ -224,21 +229,24 @@ input[type=email]::placeholder,
 input[type=search]::placeholder {
   color: #afafaf;
 }
-input[type=text]:hover,
+input[type=text]:hover, input[type=text]:focus,
 input[type=password]:hover,
-input[type=email]:hover,
-input[type=search]:hover {
-  border-color: rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
-  box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
-}
-input[type=text]:focus,
 input[type=password]:focus,
+input[type=email]:hover,
 input[type=email]:focus,
+input[type=search]:hover,
 input[type=search]:focus {
-  border-color: rgba(5, 213, 158, 0.4);
-  -webkit-box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
-  box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
+  border-color: rgba(7, 59, 76, 0.4);
+  -webkit-box-shadow: 0 0 0 4px rgba(7, 59, 76, 0.1);
+  box-shadow: 0 0 0 4px rgba(7, 59, 76, 0.1);
+}
+input[type=text]:invalid,
+input[type=password]:invalid,
+input[type=email]:invalid,
+input[type=search]:invalid {
+  border-color: rgba(239, 71, 111, 0.4);
+  -webkit-box-shadow: 0 0 0 4px rgba(239, 71, 111, 0.1);
+  box-shadow: 0 0 0 4px rgba(239, 71, 111, 0.1);
 }
 
 .search-container {
@@ -256,12 +264,23 @@ input[type=search]:focus {
   padding-left: 35.2px;
 }
 
-h1, h2, h3, h4, h4, h5 {
+button {
+  padding: 10px 15px;
   margin: 8px;
+  border-radius: 0.5rem;
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+  color: white;
+  cursor: pointer;
 }
 
-p {
-  margin: 8px;
+button:hover {
+  opacity: 0.8;
+}
+
+button:disabled:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=index.css.map */

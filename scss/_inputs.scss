@@ -6,6 +6,7 @@ input[type="search"] {
   display: block;
   padding: $padding;
   margin: $margin;
+  margin-bottom:  #{$margin * 2};
   border-radius: $radius;
   color: rgb(175, 175, 175);
   border: 1px solid #f0f0f0;
@@ -13,17 +14,22 @@ input[type="search"] {
   &::placeholder {
     color: rgb(175, 175, 175);
   }
-  &:hover {
-    border-color: rgba(0,0,0, 0.1);
-    -webkit-box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
-    box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
-  }
+  &:hover,
   &:focus {
-    border-color: rgba(5, 213, 158, 0.4);
-    -webkit-box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
-    box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
+    @extend .primary-txt;
+    border-color: rgba($primary-color, 0.4);
+    -webkit-box-shadow: 0 0 0 4px rgba($primary-color, 0.1);
+    box-shadow: 0 0 0 4px rgba($primary-color, 0.1);
   }
-  
+  &:valid {
+    // TODO:
+  }
+  &:invalid {
+    @extend .danger-txt;
+    border-color: rgba($danger-color, 0.4);
+    -webkit-box-shadow: 0 0 0 4px rgba($danger-color, 0.1);
+    box-shadow: 0 0 0 4px rgba($danger-color, 0.1);
+  }
 }
 
 .search-container {
