@@ -197,6 +197,10 @@ p {
   margin-bottom: 16px;
 }
 
+.center {
+  text-align: center;
+}
+
 input[type=text],
 input[type=password],
 input[type=email],
