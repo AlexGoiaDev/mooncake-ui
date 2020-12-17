@@ -4,7 +4,8 @@
   "description": "Mooncake ui library",
   "scripts": {
     "start": "npm run scss",
-    "scss": "sass --watch scss/style.scss ./index.css"
+    "scss": "sass --watch scss/style.scss ./index.css",
+    "up": "npm version patch && git push && npm publish"
   },
   "author": "Álex Goia",
   "license": "ISC",
