@@ -11,19 +11,14 @@ $light-shadow: rgba(0, 0, 0, 0.1);
 $very-light-shadow: rgba(0,0,0,0.05);
 $icon-size: 16px;
 
-$primary-color: #765aff;
+$primary-color: rgb(87, 211, 211);
 $danger-color: #EF476F;
-
-:root {
-  --primary-color: #765aff;
-  --secondary-color: #ffac51;
-  --success-color: #05d59e;
-  --danger-color: #EF476F;
-  --warning-color: #FFD166;
-  --disabled-color: #f2f2f2;
-  --over-light-color: rgba(0,0,0,0.5);
-  --heading-color: #333333;
-  --paragraph-color: #555555;
-}
+$secondary-color: #ffac51;
+$success-color: #05d59e;
+$warning-color: #FFD166;
+$disabled-color: #f2f2f2;
+$over-light-color: rgba(0, 0, 0, 0.5);
+$heading-color: #333333;
+$paragraph-color: #555555;
 
 

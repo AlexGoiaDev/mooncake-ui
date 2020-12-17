@@ -4,6 +4,7 @@ button {
   margin: $margin;
   border-radius: $radius;
   border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
   outline: none;
   color: white;

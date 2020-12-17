@@ -1,41 +1,29 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
-:root {
-  --primary-color: #073b4c;
-  --secondary-color: #118ab2;
-  --success-color: #05d59e;
-  --danger-color: #EF476F;
-  --warning-color: #FFD166;
-  --disabled-color: #f2f2f2;
-  --over-light-color: rgba(0,0,0,0.5);
-  --heading-color: #333333;
-  --paragraph-color: #555555;
-}
-
 /* COLORS HELPERS */
 .primary-bg, .primary-btn {
-  background-color: var(--primary-color);
+  background-color: #57d3d3;
 }
 
 .secondary-bg, .secondary-btn {
-  background-color: var(--secondary-color);
+  background-color: #ffac51;
 }
 
 .success-bg, .success-btn {
-  background-color: var(--success-color);
+  background-color: #05d59e;
 }
 
 .danger-bg, .danger-btn {
-  background-color: var(--danger-color);
+  background-color: #EF476F;
 }
 
 .warning-bg, .warning-btn {
-  background-color: var(--warning-color);
+  background-color: #FFD166;
 }
 
 .disabled-bg, button:disabled {
-  background-color: var(--disabled-color);
+  background-color: #f2f2f2;
 }
 
 .primary-txt, input[type=text]:hover, input[type=text]:focus,
@@ -45,39 +33,39 @@ input[type=email]:hover,
 input[type=email]:focus,
 input[type=search]:hover,
 input[type=search]:focus {
-  color: var(--primary-color);
+  color: #57d3d3;
 }
 
 .secondary-txt {
-  color: var(--secondary-color);
+  color: #ffac51;
 }
 
 .success-txt {
-  color: var(--success-color);
+  color: #05d59e;
 }
 
 .danger-txt, input[type=text]:invalid,
 input[type=password]:invalid,
 input[type=email]:invalid,
 input[type=search]:invalid {
-  color: var(--danger-color);
+  color: #EF476F;
 }
 
 .warning-txt {
-  color: var(--warning-color);
+  color: #FFD166;
 }
 
 .heading-color, h1, h2, h3, h4, h5 {
-  color: var(--heading-color);
+  color: #333333;
 }
 
 .paragraph-color, p {
-  color: var(--paragraph-color);
+  color: #555555;
 }
 
 /* Color a utilizar cuando tengamos un fondo suave */
 .over-light-color, button:disabled {
-  color: var(--over-light-color);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /* SHADOWS */
@@ -236,9 +224,9 @@ input[type=email]:hover,
 input[type=email]:focus,
 input[type=search]:hover,
 input[type=search]:focus {
-  border-color: rgba(7, 59, 76, 0.4);
-  -webkit-box-shadow: 0 0 0 4px rgba(7, 59, 76, 0.1);
-  box-shadow: 0 0 0 4px rgba(7, 59, 76, 0.1);
+  border-color: rgba(87, 211, 211, 0.4);
+  -webkit-box-shadow: 0 0 0 4px rgba(87, 211, 211, 0.1);
+  box-shadow: 0 0 0 4px rgba(87, 211, 211, 0.1);
 }
 input[type=text]:invalid,
 input[type=password]:invalid,
@@ -269,6 +257,7 @@ button {
   margin: 8px;
   border-radius: 0.5rem;
   border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
   outline: none;
   color: white;
