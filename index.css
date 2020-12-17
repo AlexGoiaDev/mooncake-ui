@@ -139,6 +139,7 @@ footer button {
 
 .center-content, header, footer {
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
   align-items: center;
   justify-content: space-around;
