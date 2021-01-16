@@ -4,10 +4,10 @@
 .tabs {
     display: flex;
     align-content: space-around;
-    box-shadow: 0 0 4px rgba(0,0,0,0.1);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    color: #666666;
+    color: #666666; /* TODO: review color */
+    @extend .light-shadow;
   
     .tab {
       &.current {

@@ -73,7 +73,7 @@ input[type=search]:invalid {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-.light-shadow {
+.light-shadow, .tabs {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -296,10 +296,10 @@ button:disabled:hover {
 .tabs {
   display: flex;
   align-content: space-around;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   color: #666666;
+  /* TODO: review color */
 }
 .tabs .tab {
   padding-top: 8px;
