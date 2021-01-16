@@ -7,7 +7,7 @@
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     color: #666666; /* TODO: review color */
-    @extend .light-shadow;
+    @extend .light-shadow-no-angle;
   
     .tab {
       &.current {
