@@ -10,7 +10,6 @@
 }
 
 header, footer {
-  @extend .center-content;
   z-index: 1000;
 }
 
@@ -21,15 +20,6 @@ header {
 main {
   overflow: scroll;
 }
-
-footer {
-  box-shadow: 0 -2px $padding $light-shadow;
-
-  button {
-    width: 45%;
-  }
-}
-
 
 
 .container {
