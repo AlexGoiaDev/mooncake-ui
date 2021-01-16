@@ -1,0 +1,33 @@
+
+
+/* TABS */
+.tabs {
+    display: flex;
+    align-content: space-around;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+  
+    .tab {
+      &.current {
+        color: #5469d4;
+      }
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 25%;
+      div {
+        text-align: center;
+      }
+  
+      span {
+        @extend .material-icons;
+        display: block;
+        width: 24px;
+        text-align: center;
+      }
+  
+    }
+  
+  }

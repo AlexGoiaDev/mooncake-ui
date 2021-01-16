@@ -283,7 +283,7 @@ button:disabled:hover {
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/materialicons/v70/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format("woff2");
 }
-.material-icons {
+.material-icons, .tabs .tab span {
   font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
@@ -297,6 +297,33 @@ button:disabled:hover {
   direction: ltr;
   -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  align-content: space-around;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+}
+.tabs .tab {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 25%;
+}
+.tabs .tab.current {
+  color: #5469d4;
+}
+.tabs .tab div {
+  text-align: center;
+}
+.tabs .tab span {
+  display: block;
+  width: 24px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */
