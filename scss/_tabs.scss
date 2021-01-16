@@ -11,7 +11,7 @@
   
     .tab {
       &.current {
-        color: #5469d4;
+        @extend .primary-txt;
       }
       padding-top: 8px;
       padding-bottom: 8px;

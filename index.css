@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 /* COLORS HELPERS */
 .primary-bg, .primary-btn {
-  background-color: #57d3d3;
+  background-color: #5469d4;
 }
 
 .secondary-bg, .secondary-btn {
@@ -26,14 +26,14 @@
   background-color: #f2f2f2;
 }
 
-.primary-txt, input[type=text]:hover, input[type=text]:focus,
+.primary-txt, .tabs .tab.current, input[type=text]:hover, input[type=text]:focus,
 input[type=password]:hover,
 input[type=password]:focus,
 input[type=email]:hover,
 input[type=email]:focus,
 input[type=search]:hover,
 input[type=search]:focus {
-  color: #57d3d3;
+  color: #5469d4;
 }
 
 .secondary-txt {
@@ -229,9 +229,9 @@ input[type=email]:hover,
 input[type=email]:focus,
 input[type=search]:hover,
 input[type=search]:focus {
-  border-color: rgba(87, 211, 211, 0.4);
-  -webkit-box-shadow: 0 0 0 4px rgba(87, 211, 211, 0.1);
-  box-shadow: 0 0 0 4px rgba(87, 211, 211, 0.1);
+  border-color: rgba(84, 105, 212, 0.4);
+  -webkit-box-shadow: 0 0 0 4px rgba(84, 105, 212, 0.1);
+  box-shadow: 0 0 0 4px rgba(84, 105, 212, 0.1);
 }
 input[type=text]:invalid,
 input[type=password]:invalid,
@@ -312,9 +312,6 @@ button:disabled:hover {
   padding-top: 8px;
   padding-bottom: 8px;
   width: 25%;
-}
-.tabs .tab.current {
-  color: #5469d4;
 }
 .tabs .tab div {
   text-align: center;
