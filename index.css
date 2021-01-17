@@ -300,8 +300,6 @@ button:disabled:hover {
 .tabs {
   display: flex;
   align-content: space-around;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
   color: #666666;
   /* TODO: review color */
 }
