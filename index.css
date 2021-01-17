@@ -89,7 +89,7 @@ input[type=search]:invalid {
   font-family: "Rubik", sans-serif;
 }
 
-.regular-font, button, p, .card .price {
+.regular-font, .tabs .tab, button, p, .card .price {
   font-family: "Karla", sans-serif;
 }
 
@@ -306,6 +306,7 @@ button:disabled:hover {
   /* TODO: review color */
 }
 .tabs .tab {
+  cursor: pointer;
   padding-top: 8px;
   padding-bottom: 8px;
   width: 25%;
