@@ -8,6 +8,39 @@
   grid-template-rows:  minmax(0, 1fr) 60px;
 }
 
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/*
+  Wrapper Header Content Footer 
+*/
+
+.wrapper-hcf {
+  height: 100%;
+  display: grid;
+  grid-gap: 0;
+  grid-template-areas:
+  'header'
+  'main'
+  'footer';
+  grid-template-rows:  60px minmax(0, 1fr) 60px;
+  .header {
+    grid-area: header;
+  }
+  .main {
+    grid-area: main;
+  }
+  .footer {
+    grid-area: footer;
+  }
+}
+
+
 header, footer {
   z-index: 1000;
 }
