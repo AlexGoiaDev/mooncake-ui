@@ -89,11 +89,11 @@ input[type=search]:invalid {
   font-family: "Rubik", sans-serif;
 }
 
-.regular-font, .tabs .tab, button, p, .card .price {
+.regular-font, .tabs .tab, button, span, p, .card .price {
   font-family: "Karla", sans-serif;
 }
 
-/* TODO: CREATE ONE WRAPPER FOR MAIN AND FOOTER AND OTHER ONE FOR HEADER, MAIN AND FOOTER */
+/* TODO: CREATE ONE WRAPPER FOR MAIN AND FOOTER AND OTHER ONE FOR HEADER, MAIN AND FOOTER *
 .wrapper {
   height: 100%;
   display: grid;
@@ -119,10 +119,7 @@ footer {
   height: 100%;
   display: grid;
   grid-gap: 0;
-  grid-template-areas: 
-  "header" 
-  "main" 
-  "footer";
+  grid-template-areas: "header" "main" "footer";
   grid-template-rows: 60px minmax(0, 1fr) 60px;
 }
 .wrapper-hcf .header {
@@ -245,6 +242,10 @@ h1, h2, h3, h4, h4, h5 {
 p {
   padding: 8px;
   margin-bottom: 16px;
+}
+
+span {
+  color: inherit;
 }
 
 .center {
