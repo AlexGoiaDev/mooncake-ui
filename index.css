@@ -93,12 +93,15 @@ input[type=search]:invalid {
   font-family: "Karla", sans-serif;
 }
 
+/* TODO: CREATE ONE WRAPPER FOR MAIN AND FOOTER AND OTHER ONE FOR HEADER, MAIN AND FOOTER */
 .wrapper {
   height: 100%;
   display: grid;
   grid-gap: 0;
-  grid-template-areas: "main" "footer";
-  grid-template-rows: minmax(0, 1fr) 60px;
+  grid-template-areas:
+  'main'
+  'footer';
+  grid-template-rows:  minmax(0, 1fr) 60px;
 }
 
 main {
@@ -116,7 +119,10 @@ footer {
   height: 100%;
   display: grid;
   grid-gap: 0;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: 
+  "header" 
+  "main" 
+  "footer";
   grid-template-rows: 60px minmax(0, 1fr) 60px;
 }
 .wrapper-hcf .header {
