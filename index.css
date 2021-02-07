@@ -93,7 +93,6 @@ input[type=search]:invalid {
   font-family: "Karla", sans-serif;
 }
 
-/* TODO: CREATE ONE WRAPPER FOR MAIN AND FOOTER AND OTHER ONE FOR HEADER, MAIN AND FOOTER */
 .wrapper {
   height: 100%;
   display: grid;
@@ -104,6 +103,7 @@ input[type=search]:invalid {
 
 main {
   grid-area: main;
+  overflow: scroll;
 }
 
 footer {
@@ -184,6 +184,7 @@ main {
 }
 
 .toolbar {
+  height: 50%;
   display: grid;
   grid-gap: 0;
   grid-template-areas: "left" "middle" "right";
@@ -193,6 +194,12 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 50px;
+}
+.toolbar .left button, .toolbar .middle button, .toolbar .right button {
+  margin: 0;
+  padding: 0;
 }
 
 .space-evenly {
