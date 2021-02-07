@@ -352,6 +352,7 @@ button:disabled:hover {
   direction: ltr;
   -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
+  overflow: hidden;
 }
 
 /* TABS */
