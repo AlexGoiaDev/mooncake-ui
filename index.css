@@ -374,6 +374,7 @@ button:disabled:hover {
 .tabs .tab span {
   width: 24px;
   text-align: center;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=index.css.map */
