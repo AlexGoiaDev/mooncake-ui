@@ -10,6 +10,9 @@ button {
   color: white;
   cursor: pointer;
   @extend .regular-font;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .primary-btn {
