@@ -10,6 +10,7 @@ p {
     @extend .paragraph-color;
     padding: $margin;
     margin-bottom: #{$margin * 2};
+    text-align: justify;
 }
 
 span {
