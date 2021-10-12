@@ -105,6 +105,11 @@ input[type=search]:invalid {
   font-family: "Karla", sans-serif;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper {
   height: 100%;
   display: grid;
