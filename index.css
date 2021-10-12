@@ -1,6 +1,18 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+:root {
+  --primary-color: #5469d4;
+  --secondary-color: #ffac51;
+  --danger-color: #EF476F;
+  --success-color: #05d59e;
+  --warning-color: #FFD166;
+  --disabled-color: #f2f2f2;
+  --over-light-color: rgba(0, 0, 0, 0.5);
+  --heading-color: #333333;
+  --paragraph-color: #555555;
+}
+
 /* COLORS HELPERS */
 .primary-bg, .primary-btn {
   background-color: #5469d4;
@@ -139,7 +151,7 @@ main {
 }
 
 .container {
-  padding: 10px;
+  padding: 8px;
   margin: 8px;
 }
 
@@ -159,7 +171,7 @@ main {
   color: gray;
 }
 .full-screen h1 {
-  padding-left: 20px;
+  padding-left: 16px;
   margin-top: 32px;
 }
 
@@ -176,7 +188,7 @@ main {
 }
 
 .full-width-in {
-  width: calc(100% - 18px * 2);
+  width: calc(100% - 16px * 2);
 }
 
 .half-width {
@@ -210,28 +222,30 @@ main {
 
 /* Lo recomendable es usar la card en un article */
 .card {
-  padding: 10px;
+  padding: 8px;
   margin: 8px;
   border-radius: 0.5rem;
   background: white;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-  width: calc(50% - 36px);
+  width: calc(100% - 32px);
   /* La primera imagen debería ir antes del título */
   /*
     El título de la card debe ir en h2
   */
 }
 .card img {
-  margin-left: -10px;
-  margin-top: -10px;
-  width: calc(100% + 20px);
+  margin-left: -8px;
+  margin-top: -8px;
+  width: calc(100% + 16px);
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
-.card h2 {
+.card .card-title {
   text-align: center;
   margin-top: 8px;
-  font-size: 1.25em;
+}
+.card .card-title.left {
+  text-align: center;
 }
 .card .price {
   text-align: right;
@@ -264,7 +278,7 @@ input[type=email],
 input[type=search] {
   outline: none;
   display: block;
-  padding: 10px;
+  padding: 8px;
   margin: 8px;
   margin-bottom: 16px;
   border-radius: 0.5rem;
@@ -314,7 +328,7 @@ input[type=search]:invalid {
 }
 
 button {
-  padding: 10px 15px;
+  padding: 8px 12px;
   margin: 8px;
   border-radius: 0.5rem;
   border: none;
@@ -359,11 +373,36 @@ button:disabled:hover {
   overflow: hidden;
 }
 
+/*  MENU TODO: mover */
+nav.menu ul {
+  list-style: none;
+  display: flex;
+}
+nav.menu ul li {
+  list-style: none;
+  margin-right: 1.5em;
+}
+nav.menu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Karla", sans-serif;
+  color: #333333;
+  padding: 8px;
+}
+nav.menu ul li a:active {
+  color: #EF476F;
+}
+nav.menu ul li a:hover {
+  background-color: #333333;
+  color: white;
+  border-radius: 0.5rem;
+}
+
 /* TABS */
 .tabs {
   display: flex;
   align-content: space-around;
-  color: #666666;
+  color: #333333;
   /* TODO: review color */
   height: 100%;
 }
@@ -385,6 +424,11 @@ button:disabled:hover {
   text-align: center;
   overflow: hidden;
   font-size: 20px;
+}
+
+code {
+  background-color: black;
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

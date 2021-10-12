@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
-$padding: 10px;
+$padding: 8px;
 $margin: 8px;
 $radius: 0.5rem;
 $titleFont: 'Rubik', sans-serif;
@@ -12,13 +12,25 @@ $very-light-shadow: rgba(0,0,0,0.05);
 $icon-size: 16px;
 
 $primary-color: #5469d4;
-$danger-color: #EF476F;
 $secondary-color: #ffac51;
+$danger-color: #EF476F;
 $success-color: #05d59e;
 $warning-color: #FFD166;
 $disabled-color: #f2f2f2;
 $over-light-color: rgba(0, 0, 0, 0.5);
 $heading-color: #333333;
 $paragraph-color: #555555;
+
+:root {
+    --primary-color: #5469d4;
+    --secondary-color: #ffac51;
+    --danger-color: #EF476F;
+    --success-color: #05d59e;
+    --warning-color: #FFD166;
+    --disabled-color: #f2f2f2;
+    --over-light-color: rgba(0, 0, 0, 0.5);
+    --heading-color: #333333;
+    --paragraph-color: #555555;
+}
 
 

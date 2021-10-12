@@ -1,13 +1,40 @@
 
+/*  MENU TODO: mover */
+nav.menu {
+  ul {
+    list-style: none;
+    display: flex;
+    li {
+      list-style: none;
+      margin-right: 1.5em;
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $regularFont;
+        color: $heading-color;
+        padding: 8px;
+      }
+      a:active {
+        color: $danger-color;
+      }
+      a:hover {
+        background-color: $heading-color;
+        color: white;
+        border-radius: $radius;
+      }
+    }
+  }
+}
+
 
 /* TABS */
 .tabs {
     display: flex;
     align-content: space-around;
-    color: #666666; /* TODO: review color */
+    color: $heading-color; /* TODO: review color */
     height: 100%;
     @extend .light-shadow-no-angle;
-  
+
     .tab {
       &.current {
         @extend .primary-txt;

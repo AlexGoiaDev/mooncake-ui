@@ -8,7 +8,7 @@
   border-radius: $radius;
   background: white;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-  width: calc(50% - #{(2 * $margin) + (2 * $padding)});
+  width: calc(100% - #{(2 * $margin) + (2 * $padding)});
 
   /* La primera imagen debería ir antes del título */
   img {
@@ -22,10 +22,12 @@
   /*
     El título de la card debe ir en h2
   */
-  h2 {
+  .card-title {
     text-align: center;
     margin-top: $margin;
-    font-size: 1.25em;
+    &.left {
+      text-align: center;
+    }
   }
 
   .price {
