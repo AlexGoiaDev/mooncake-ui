@@ -227,6 +227,11 @@ main {
   justify-content: space-evenly;
 }
 
+.profile {
+  border-radius: 50%;
+  border: 2px solid var(--over-light-color);
+}
+
 /* Lo recomendable es usar la card en un article */
 .card {
   padding: 8px;

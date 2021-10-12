@@ -136,3 +136,9 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+
+.profile {
+  border-radius: 50%;
+  border: 2px solid var(--over-light-color);
+}
