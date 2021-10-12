@@ -140,5 +140,8 @@ main {
 
 .profile {
   border-radius: 50%;
-  border: 2px solid var(--over-light-color);
+  width: 50px;
+  height: 50px;
+  @extend .very-light-shadow;
+
 }
