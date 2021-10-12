@@ -1,6 +1,6 @@
 {
   "name": "mooncake-ui",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "description": "Mooncake ui library",
   "scripts": {
     "start": "npm run scss",
