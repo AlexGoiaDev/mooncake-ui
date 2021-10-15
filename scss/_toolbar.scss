@@ -7,17 +7,6 @@
   'middle'
   'right';
   grid-template-columns: 60px minmax(0, 1fr) 60px;
-  .left, .middle, .right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    button {
-      margin: 0;
-      padding: 0;
-    }
-  }
   .left {
     grid-area: left;
   }
