@@ -332,7 +332,7 @@ button:disabled:hover {
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/materialicons/v70/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format("woff2");
 }
-.material-icons, .tabs .tab span {
+.mat-icon, .tabs .tab span {
   font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
