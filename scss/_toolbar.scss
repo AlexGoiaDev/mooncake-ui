@@ -2,10 +2,8 @@
 .toolbar {
   display: grid;
   grid-gap: 0;
-  grid-template-areas:
-  'left'
-  'middle'
-  'right';
+  grid-template-areas: 
+  "left middle right";
   grid-template-columns: 60px minmax(0, 1fr) 60px;
   .left {
     grid-area: left;
@@ -15,5 +13,10 @@
   }
   .right {
     grid-area: right;
+  }
+  .left, .middle, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
