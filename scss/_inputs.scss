@@ -21,10 +21,13 @@ input[type="search"] {
     -webkit-box-shadow: 0 0 0 4px rgba($primary-color, 0.1);
     box-shadow: 0 0 0 4px rgba($primary-color, 0.1);
   }
-  &:valid {
-    // TODO:
+  &.valid {
+    @extend .success-txt;
+    border-color: rgba($success-color, 0.4);
+     -webkit-box-shadow: 0 0 0 4px rgba($success-color, 0.1);
+    box-shadow: 0 0 0 4px rgba($success-color, 0.1);
   }
-  &:invalid {
+  &.error {
     @extend .danger-txt;
     border-color: rgba($danger-color, 0.4);
     -webkit-box-shadow: 0 0 0 4px rgba($danger-color, 0.1);

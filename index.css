@@ -52,14 +52,17 @@ input[type=search]:focus {
   color: #ffac51;
 }
 
-.success-txt {
+.success-txt, input[type=text].valid,
+input[type=password].valid,
+input[type=email].valid,
+input[type=search].valid {
   color: #05d59e;
 }
 
-.danger-txt, input[type=text]:invalid,
-input[type=password]:invalid,
-input[type=email]:invalid,
-input[type=search]:invalid {
+.danger-txt, input[type=text].error,
+input[type=password].error,
+input[type=email].error,
+input[type=search].error {
   color: #EF476F;
 }
 
@@ -192,6 +195,12 @@ main {
   justify-content: space-evenly;
 }
 
+.space-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .circle {
   border-radius: 50%;
 }
@@ -279,10 +288,18 @@ input[type=search]:focus {
   -webkit-box-shadow: 0 0 0 4px rgba(84, 105, 212, 0.1);
   box-shadow: 0 0 0 4px rgba(84, 105, 212, 0.1);
 }
-input[type=text]:invalid,
-input[type=password]:invalid,
-input[type=email]:invalid,
-input[type=search]:invalid {
+input[type=text].valid,
+input[type=password].valid,
+input[type=email].valid,
+input[type=search].valid {
+  border-color: rgba(5, 213, 158, 0.4);
+  -webkit-box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
+  box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
+}
+input[type=text].error,
+input[type=password].error,
+input[type=email].error,
+input[type=search].error {
   border-color: rgba(239, 71, 111, 0.4);
   -webkit-box-shadow: 0 0 0 4px rgba(239, 71, 111, 0.1);
   box-shadow: 0 0 0 4px rgba(239, 71, 111, 0.1);
