@@ -1,0 +1,9 @@
+a {
+    @extend .primary-txt;
+    &:visited {
+        @extend .primary-txt;
+    }
+    &:hover {
+        @extend .heading-color;
+    }
+}
