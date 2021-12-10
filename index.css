@@ -4,9 +4,9 @@
 :root {
   --primary-color: #5469d4;
   --secondary-color: #ffac51;
-  --danger-color: #EF476F;
+  --danger-color: #ef476f;
   --success-color: #05d59e;
-  --warning-color: #FFD166;
+  --warning-color: #ffd166;
   --disabled-color: #f2f2f2;
   --over-light-color: rgba(0, 0, 0, 0.5);
   --heading-color: #333333;
@@ -15,27 +15,27 @@
 
 /* COLORS HELPERS */
 .primary-bg, .primary-btn {
-  background-color: #5469d4;
+  background-color: var(--primary-color);
 }
 
 .secondary-bg, .secondary-btn {
-  background-color: #ffac51;
+  background-color: var(--secondary-color);
 }
 
 .success-bg, .success-btn {
-  background-color: #05d59e;
+  background-color: var(--success-color);
 }
 
 .danger-bg, .danger-btn {
-  background-color: #EF476F;
+  background-color: var(--danger-color);
 }
 
 .warning-bg, .warning-btn {
-  background-color: #FFD166;
+  background-color: var(--warning-color);
 }
 
 .disabled-bg, button:disabled {
-  background-color: #f2f2f2;
+  background-color: var(--disabled-color);
 }
 
 .primary-txt, .tabs .tab.current, input[type=text]:hover, input[type=text]:focus,
@@ -45,42 +45,42 @@ input[type=email]:hover,
 input[type=email]:focus,
 input[type=search]:hover,
 input[type=search]:focus, a:visited, a {
-  color: #5469d4;
+  color: var(--primary-color);
 }
 
 .secondary-txt {
-  color: #ffac51;
+  color: var(--secondary-color);
 }
 
 .success-txt, input[type=text].valid,
 input[type=password].valid,
 input[type=email].valid,
 input[type=search].valid {
-  color: #05d59e;
+  color: var(--success-color);
 }
 
 .danger-txt, input[type=text].error,
 input[type=password].error,
 input[type=email].error,
 input[type=search].error {
-  color: #EF476F;
+  color: var(--danger-color);
 }
 
 .warning-txt {
-  color: #FFD166;
+  color: var(--warning-color);
 }
 
 .heading-color, a:hover, h1, h2, h3, h4, h5 {
-  color: #333333;
+  color: var(--heading-color);
 }
 
 .paragraph-color, p {
-  color: #555555;
+  color: var(--paragraph-color);
 }
 
 /* Color a utilizar cuando tengamos un fondo suave */
 .over-light-color, button:disabled {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--over-light-color);
 }
 
 /* SHADOWS */
@@ -283,25 +283,25 @@ input[type=email]:hover,
 input[type=email]:focus,
 input[type=search]:hover,
 input[type=search]:focus {
-  border-color: rgba(84, 105, 212, 0.4);
-  -webkit-box-shadow: 0 0 0 4px rgba(84, 105, 212, 0.1);
-  box-shadow: 0 0 0 4px rgba(84, 105, 212, 0.1);
+  border-color: rgba(var(--primary-color), 0.4);
+  -webkit-box-shadow: 0 0 0 4px rgba(var(--primary-color), 0.1);
+  box-shadow: 0 0 0 4px rgba(var(--primary-color), 0.1);
 }
 input[type=text].valid,
 input[type=password].valid,
 input[type=email].valid,
 input[type=search].valid {
-  border-color: rgba(5, 213, 158, 0.4);
-  -webkit-box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
-  box-shadow: 0 0 0 4px rgba(5, 213, 158, 0.1);
+  border-color: rgba(var(--success-color), 0.4);
+  -webkit-box-shadow: 0 0 0 4px rgba(var(--success-color), 0.1);
+  box-shadow: 0 0 0 4px rgba(var(--success-color), 0.1);
 }
 input[type=text].error,
 input[type=password].error,
 input[type=email].error,
 input[type=search].error {
-  border-color: rgba(239, 71, 111, 0.4);
-  -webkit-box-shadow: 0 0 0 4px rgba(239, 71, 111, 0.1);
-  box-shadow: 0 0 0 4px rgba(239, 71, 111, 0.1);
+  border-color: rgba(var(--danger-color), 0.4);
+  -webkit-box-shadow: 0 0 0 4px rgba(var(--danger-color), 0.1);
+  box-shadow: 0 0 0 4px rgba(var(--danger-color), 0.1);
 }
 
 .search-container {
@@ -378,14 +378,14 @@ nav.menu ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Karla", sans-serif;
-  color: #333333;
+  color: var(--heading-color);
   padding: 8px;
 }
 nav.menu ul li a:active {
-  color: #EF476F;
+  color: var(--danger-color);
 }
 nav.menu ul li a:hover {
-  background-color: #333333;
+  background-color: var(--heading-color);
   color: white;
   border-radius: 0.5rem;
 }
@@ -394,7 +394,7 @@ nav.menu ul li a:hover {
 .tabs {
   display: flex;
   align-content: space-around;
-  color: #333333;
+  color: var(--heading-color);
   /* TODO: review color */
   height: 100%;
 }

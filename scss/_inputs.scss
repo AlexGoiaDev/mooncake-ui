@@ -1,12 +1,12 @@
-input[type="text"], 
-input[type="password"], 
+input[type="text"],
+input[type="password"],
 input[type="email"],
 input[type="search"] {
   outline: none;
   display: block;
   padding: $padding;
   margin: $margin;
-  margin-bottom:  #{$margin * 2};
+  margin-bottom: #{$margin * 2};
   border-radius: $radius;
   color: rgb(175, 175, 175);
   border: 1px solid #f0f0f0;
@@ -17,21 +17,21 @@ input[type="search"] {
   &:hover,
   &:focus {
     @extend .primary-txt;
-    border-color: rgba($primary-color, 0.4);
-    -webkit-box-shadow: 0 0 0 4px rgba($primary-color, 0.1);
-    box-shadow: 0 0 0 4px rgba($primary-color, 0.1);
+    border-color: rgba(var(--primary-color), 0.4);
+    -webkit-box-shadow: 0 0 0 4px rgba(var(--primary-color), 0.1);
+    box-shadow: 0 0 0 4px rgba(var(--primary-color), 0.1);
   }
   &.valid {
     @extend .success-txt;
-    border-color: rgba($success-color, 0.4);
-     -webkit-box-shadow: 0 0 0 4px rgba($success-color, 0.1);
-    box-shadow: 0 0 0 4px rgba($success-color, 0.1);
+    border-color: rgba(var(--success-color), 0.4);
+    -webkit-box-shadow: 0 0 0 4px rgba(var(--success-color), 0.1);
+    box-shadow: 0 0 0 4px rgba(var(--success-color), 0.1);
   }
   &.error {
     @extend .danger-txt;
-    border-color: rgba($danger-color, 0.4);
-    -webkit-box-shadow: 0 0 0 4px rgba($danger-color, 0.1);
-    box-shadow: 0 0 0 4px rgba($danger-color, 0.1);
+    border-color: rgba(var(--danger-color), 0.4);
+    -webkit-box-shadow: 0 0 0 4px rgba(var(--danger-color), 0.1);
+    box-shadow: 0 0 0 4px rgba(var(--danger-color), 0.1);
   }
 }
 
@@ -48,6 +48,4 @@ input[type="search"] {
   input[type="search"] {
     padding-left: #{$icon-size * 2.2};
   }
-
 }
-

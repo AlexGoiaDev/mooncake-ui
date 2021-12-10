@@ -1,58 +1,57 @@
 /* COLORS HELPERS */
 .primary-bg {
-    background-color:  $primary-color ;
+    background-color: var(--primary-color);
 }
 
 .secondary-bg {
-    background-color:  $secondary-color ;
+    background-color: var(--secondary-color);
 }
 
 .success-bg {
-    background-color:  $success-color ;
+    background-color: var(--success-color);
 }
 
 .danger-bg {
-    background-color:  $danger-color ;
+    background-color: var(--danger-color);
 }
 
 .warning-bg {
-    background-color:  $warning-color ;
+    background-color: var(--warning-color);
 }
 
 .disabled-bg {
-    background-color:  $disabled-color ;
+    background-color: var(--disabled-color);
 }
 
 .primary-txt {
-    color:  $primary-color ;
+    color: var(--primary-color);
 }
 
 .secondary-txt {
-    color:  $secondary-color ;
+    color: var(--secondary-color);
 }
 
 .success-txt {
-    color:  $success-color ;
+    color: var(--success-color);
 }
 
 .danger-txt {
-    color:  $danger-color ;
+    color: var(--danger-color);
 }
 
 .warning-txt {
-    color:  $warning-color ;
+    color: var(--warning-color);
 }
 
 .heading-color {
-    color:  $heading-color ;
+    color: var(--heading-color);
 }
 
 .paragraph-color {
-    color:  $paragraph-color ;
+    color: var(--paragraph-color);
 }
-
 
 /* Color a utilizar cuando tengamos un fondo suave */
 .over-light-color {
-    color:  $over-light-color ;
+    color: var(--over-light-color);
 }
