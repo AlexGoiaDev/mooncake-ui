@@ -11,6 +11,7 @@
   --over-light-color: rgba(0, 0, 0, 0.5);
   --heading-color: #333333;
   --paragraph-color: #555555;
+  --light-gray: #eee;
 }
 
 /* COLORS HELPERS */
@@ -36,6 +37,10 @@
 
 .disabled-bg, button:disabled {
   background-color: var(--disabled-color);
+}
+
+.light-gray-bg {
+  background-color: var(--light-gray);
 }
 
 .primary-txt, .tabs .tab.current, input[type=text]:hover, input[type=text]:focus,
@@ -76,6 +81,10 @@ input[type=search].error {
 
 .paragraph-color, p {
   color: var(--paragraph-color);
+}
+
+.light-gray-color {
+  color: var(--light-gray);
 }
 
 /* Color a utilizar cuando tengamos un fondo suave */
