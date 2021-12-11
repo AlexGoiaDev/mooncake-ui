@@ -1,8 +1,10 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
+  @extend .regular-font;
 }
 
 .wrapper {
@@ -10,9 +12,9 @@ body, html {
   display: grid;
   grid-gap: 0;
   grid-template-areas:
-  'main'
-  'footer';
-  grid-template-rows:  minmax(0, 1fr) 60px;
+    "main"
+    "footer";
+  grid-template-rows: minmax(0, 1fr) 60px;
 }
 
 main {
@@ -33,23 +35,23 @@ footer {
   display: grid;
   grid-gap: 0;
   grid-template-areas:
-  'header'
-  'main'
-  'footer';
-  grid-template-rows:  60px minmax(0, 1fr) 60px;
-  .header {
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 60px minmax(0, 1fr) 60px;
+  header {
     grid-area: header;
   }
-  .main {
+  main {
     grid-area: main;
   }
-  .footer {
+  footer {
     grid-area: footer;
   }
 }
 
-
-header, footer {
+header,
+footer {
   z-index: 1000;
 }
 
@@ -62,11 +64,21 @@ main {
   overflow: scroll;
 }
 
+/** 
+  Ancho máximo
+*/
+.max-width {
+  max-width: 100%;
+  @include desktop {
+    max-width: $desktop-width;
+    margin: 0 auto;
+  }
+}
 
 .container {
+  @extend .max-width;
   padding: $padding;
-} 
-
+}
 
 .center-content {
   display: flex;
@@ -81,7 +93,7 @@ main {
 }
 
 .full-width-in {
-  width: calc(100% - #{$margin +  $padding} * 2);
+  width: calc(100% - #{$margin + $padding} * 2);
 }
 
 .half-width {
