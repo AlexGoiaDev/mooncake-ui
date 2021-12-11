@@ -2,16 +2,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 
 :root {
-    --primary-color: #5469d4;
-    --secondary-color: #ffac51;
-    --danger-color: #ef476f;
-    --success-color: #05d59e;
-    --warning-color: #ffd166;
+    --primary-color: rgb(84, 105, 212);
+    --secondary-color: rgb(255, 172, 81);
+    --danger-color: rgb(239, 71, 111);
+    --success-color: rgb(5, 213, 158);
+    --warning-color: rgb(255, 209, 102);
     --disabled-color: #f2f2f2;
     --over-light-color: rgba(0, 0, 0, 0.5);
     --heading-color: #333333;
     --paragraph-color: #555555;
     --light-gray: #eee;
+    --card-color: #fff;
+    --primary-color-transparent-05: rgba(84, 105, 212, 0.5);
+    --primary-color-transparent-01: rgba(84, 105, 212, 0.1);
+    --secondary-color-transparent-05: rgba(255, 172, 81, 0.5);
+    --secondary-color-transparent-01: rgba(255, 172, 81, 0.1);
+    --danger-color-transparent-05: rgba(239, 71, 111, 0.5);
+    --danger-color-transparent-01: rgba(239, 71, 111, 0.1);
+    --success-color-transparent-05: rgba(5, 213, 158, 0.5);
+    --success-color-transparent-01: rgba(5, 213, 158, 0.1);
 }
 
 $padding: 12px;

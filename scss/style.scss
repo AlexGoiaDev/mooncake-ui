@@ -1,16 +1,16 @@
-@import './@theme';
-@import './mixins';
-@import './helpers';
-@import './layout';
-@import './card';
-@import './text';
-@import './links';
-@import './inputs';
-@import './button';
-@import './material_icons';
-@import './tabs';
-@import './toolbar';
-
+@import "./@theme";
+@import "./mixins";
+@import "./functions";
+@import "./helpers";
+@import "./layout";
+@import "./card";
+@import "./text";
+@import "./links";
+@import "./inputs";
+@import "./button";
+@import "./material_icons";
+@import "./tabs";
+@import "./toolbar";
 
 code {
     background-color: black;

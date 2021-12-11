@@ -1,12 +1,10 @@
-
 /* Lo recomendable es usar la card en un article */
-
 
 .card {
   padding: $padding;
   margin: $margin;
   border-radius: $radius;
-  background: white;
+  background: var(--card-color);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   width: calc(100% - #{(2 * $margin) + (2 * $padding)});
 
@@ -36,6 +34,4 @@
     color: #333;
     margin: 0;
   }
-
-  
 }
