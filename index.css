@@ -434,6 +434,7 @@ nav.menu ul li a:hover {
 }
 
 .toolbar {
+  height: 60px;
   display: grid;
   grid-gap: 0;
   grid-template-areas: "left middle right";

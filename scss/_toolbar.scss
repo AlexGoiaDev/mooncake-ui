@@ -1,5 +1,6 @@
 .toolbar {
   @extend .max-width;
+  height: 60px;
   display: grid;
   grid-gap: 0;
   grid-template-areas: "left middle right";
