@@ -9,7 +9,7 @@ nav.menu {
       a {
         text-decoration: none;
         text-transform: uppercase;
-        font-family: $regularFont;
+        @extend .regular-font;
         color: var(--heading-color);
         padding: 8px;
       }

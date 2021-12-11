@@ -1,16 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 
-$padding: 8px;
-$margin: 8px;
-$radius: 0.5rem;
-$titleFont: "Rubik", sans-serif;
-$regularFont: "Karla", sans-serif;
-$shadow: rgba(0, 0, 0, 0.15);
-$light-shadow: rgba(0, 0, 0, 0.1);
-$very-light-shadow: rgba(0, 0, 0, 0.05);
-$icon-size: 16px;
-
 :root {
     --primary-color: #5469d4;
     --secondary-color: #ffac51;
@@ -22,3 +12,15 @@ $icon-size: 16px;
     --heading-color: #333333;
     --paragraph-color: #555555;
 }
+
+$padding: 12px;
+$margin: 8px;
+$radius: 0.5rem;
+$titleFont: "Rubik", sans-serif;
+$regularFont: "Karla", sans-serif;
+$shadow: rgba(0, 0, 0, 0.15);
+$light-shadow: rgba(0, 0, 0, 0.1);
+$very-light-shadow: rgba(0, 0, 0, 0.05);
+$icon-size: 16px;
+$tablet-width: 768px;
+$desktop-width: 1024px;

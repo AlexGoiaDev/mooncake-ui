@@ -104,11 +104,13 @@ input[type=search].error {
   font-family: "Rubik", sans-serif;
 }
 
-.regular-font, .tabs .tab, button, span, p, .card .price {
+.regular-font, .tabs .tab, nav.menu ul li a, button, span, p, .card .price, body,
+html {
   font-family: "Karla", sans-serif;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -142,17 +144,18 @@ footer {
   grid-template-areas: "header" "main" "footer";
   grid-template-rows: 60px minmax(0, 1fr) 60px;
 }
-.wrapper-hcf .header {
+.wrapper-hcf header {
   grid-area: header;
 }
-.wrapper-hcf .main {
+.wrapper-hcf main {
   grid-area: main;
 }
-.wrapper-hcf .footer {
+.wrapper-hcf footer {
   grid-area: footer;
 }
 
-header, footer {
+header,
+footer {
   z-index: 1000;
 }
 
@@ -164,8 +167,21 @@ main {
   overflow: scroll;
 }
 
+/** 
+  Ancho máximo
+*/
+.max-width, .toolbar, .container {
+  max-width: 100%;
+}
+@media (min-width: 1024px) {
+  .max-width, .toolbar, .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+
 .container {
-  padding: 8px;
+  padding: 12px;
 }
 
 .center-content {
@@ -181,7 +197,7 @@ main {
 }
 
 .full-width-in {
-  width: calc(100% - 16px * 2);
+  width: calc(100% - 20px * 2);
 }
 
 .half-width {
@@ -206,21 +222,21 @@ main {
 
 /* Lo recomendable es usar la card en un article */
 .card {
-  padding: 8px;
+  padding: 12px;
   margin: 8px;
   border-radius: 0.5rem;
   background: white;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-  width: calc(100% - 32px);
+  width: calc(100% - 40px);
   /* La primera imagen debería ir antes del título */
   /*
     El título de la card debe ir en h2
   */
 }
 .card img {
-  margin-left: -8px;
-  margin-top: -8px;
-  width: calc(100% + 16px);
+  margin-left: -12px;
+  margin-top: -12px;
+  width: calc(100% + 24px);
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
@@ -262,7 +278,7 @@ input[type=email],
 input[type=search] {
   outline: none;
   display: block;
-  padding: 8px;
+  padding: 12px;
   margin: 8px;
   margin-bottom: 16px;
   border-radius: 0.5rem;
@@ -320,7 +336,7 @@ input[type=search].error {
 }
 
 button {
-  padding: 8px 12px;
+  padding: 12px 18px;
   margin: 8px;
   border-radius: 0.5rem;
   border: none;
@@ -377,7 +393,6 @@ nav.menu ul li {
 nav.menu ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Karla", sans-serif;
   color: var(--heading-color);
   padding: 8px;
 }
@@ -433,7 +448,9 @@ nav.menu ul li a:hover {
 .toolbar .right {
   grid-area: right;
 }
-.toolbar .left, .toolbar .middle, .toolbar .right {
+.toolbar .left,
+.toolbar .middle,
+.toolbar .right {
   display: flex;
   justify-content: center;
   align-items: center;
