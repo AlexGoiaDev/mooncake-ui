@@ -31,6 +31,10 @@
     color: var(--primary-color);
 }
 
+.white-bg {
+    color: var(--white-bg);
+}
+
 .secondary-txt {
     color: var(--secondary-color);
 }
@@ -62,4 +66,8 @@
 /* Color a utilizar cuando tengamos un fondo suave */
 .over-light-color {
     color: var(--over-light-color);
+}
+
+.white-txt {
+    color: var(--white-color);
 }
