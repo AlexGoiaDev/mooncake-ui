@@ -1,4 +1,9 @@
-h1, h2, h3, h4, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h4,
+h5 {
     @extend .title-font;
     @extend .heading-color;
     padding: $margin;
@@ -9,15 +14,15 @@ p {
     @extend .regular-font;
     @extend .paragraph-color;
     padding: $margin;
-    margin-bottom: #{$margin * 2};
     text-align: justify;
+    margin-block-end: $margin;
+    margin-block-start: #{$margin / 2};
 }
 
 span {
     @extend .regular-font;
     color: inherit;
 }
-
 
 .center {
     text-align: center;
