@@ -10,6 +10,7 @@ h5 {
     margin-bottom: #{$margin * 2};
 }
 
+/* Paragraph */
 p {
     @extend .regular-font;
     @extend .paragraph-color;
@@ -17,6 +18,13 @@ p {
     text-align: justify;
     margin-block-end: $margin;
     margin-block-start: #{$margin / 2};
+}
+
+form {
+    p.danger-txt {
+        padding-top: 0;
+        margin-block-start: 0;
+    }
 }
 
 span {
