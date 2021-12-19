@@ -57,6 +57,7 @@ footer {
 
 header {
   height: 60px;
+  @extend .white-bg;
   @extend .very-light-shadow;
 }
 

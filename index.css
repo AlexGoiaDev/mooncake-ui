@@ -63,7 +63,7 @@ input[type=search]:focus, a:visited, a {
   color: var(--primary-color);
 }
 
-.white-bg {
+.white-bg, header {
   color: var(--white-bg);
 }
 
