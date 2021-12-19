@@ -64,7 +64,7 @@ input[type=search]:focus, a:visited, a {
 }
 
 .white-bg, header {
-  color: var(--white-bg);
+  color: var(--white-color);
 }
 
 .secondary-txt {
